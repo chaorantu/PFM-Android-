@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9AC0CD"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="50dp"
+        android:textColor="#FFFFFF"
+        android:text="经销商："
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginRight="50dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:background="#EAEAEA"
+        android:ems="10" />
+ 
+ <Button
+     android:id="@+id/BtAdd"
+      style="?android:attr/buttonStyleSmall"
+        android:layout_width="62dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/click"
+        android:textColor="#FFFFFF"
+        android:text="添加" />
+
+ <Button
+     android:id="@+id/BtUpdate"
+     style="?android:attr/buttonStyleSmall"
+     android:layout_width="62dp"
+     android:layout_height="36dp"
+     android:layout_marginLeft="100dp"
+     android:layout_alignBaseline="@+id/BtAdd"
+     android:layout_alignBottom="@+id/BtAdd"
+     android:layout_alignLeft="@+id/BtAdd"
+     android:background="@drawable/click"
+     android:textColor="#FFFFFF"
+     android:text="修改" />
+ 
+ <Button
+     android:id="@+id/BTDelete"
+     style="?android:attr/buttonStyleSmall"
+     android:layout_width="62dp"
+     android:layout_height="36dp"
+     android:layout_marginLeft="100dp"
+     android:layout_alignBaseline="@+id/BtUpdate"
+     android:layout_alignBottom="@+id/BtUpdate"
+     android:layout_alignLeft="@+id/BtUpdate"
+     android:background="@drawable/click"
+     android:textColor="#FFFFFF"
+     android:text="删除" />
+
+ <ListView
+        android:id="@+id/listView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fadeScrollbars="true"
+        android:layout_marginTop="250dp"
+        android:footerDividersEnabled="true" >
+ </ListView>
+
+
+
+</RelativeLayout>

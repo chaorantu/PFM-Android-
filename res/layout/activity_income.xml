@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9AC0CD"
+    tools:context="${relativePackage}.${activityClass}" >
+
+     <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="20dp"
+        android:text="选择车型："
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textview"
+        android:layout_alignBottom="@+id/textview"
+        android:background="#EAEAEA"
+         />
+    <TextView
+        android:id="@+id/textview0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="60dp"
+        android:text="选择经销商："
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+    <Spinner
+        android:id="@+id/spinner0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textview0"
+        android:layout_alignBottom="@+id/textview0"
+        android:background="#EAEAEA"
+         />
+    <TextView 
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="100dp"
+        android:text="选择时间："
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+   
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="120dp"
+        android:layout_toRightOf="@+id/textview1"
+        android:layout_alignBottom="@+id/textview1"
+        android:layout_alignBaseline="@+id/textview1"
+        android:layout_alignTop="@+id/textview1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:background="#EAEAEA" />
+
+<Button
+    android:id="@+id/button1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="85dp"
+    android:layout_toRightOf="@+id/textview2"
+    android:height="10dp"
+    android:text="选择时间"
+    android:textSize="11dp"
+    android:width="80dp" />
+
+<TextView 
+        android:id="@+id/textview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="140dp"
+        android:text="输入数量:"
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+<EditText
+    android:id="@+id/edittext1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/textview3"
+    android:layout_alignBottom="@+id/textview3"
+    android:layout_alignLeft="@+id/textview2"
+    android:background="#EAEAEA"
+    android:ems="10"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:width="120dp" />
+<TextView 
+        android:id="@+id/textview5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="180dp"
+        android:text="单价:"
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+<EditText
+    android:id="@+id/edittext3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/textview5"
+    android:layout_alignBottom="@+id/textview5"
+    android:layout_toRightOf="@+id/textview1"
+    android:background="#EAEAEA"
+    android:ems="10"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:width="120dp"/>
+<TextView 
+        android:id="@+id/textview4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="220dp"
+        android:text="详细备注:"
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+<Button
+    android:id="@+id/button2"
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignRight="@+id/textview4"
+    android:layout_below="@+id/textview4"
+    android:layout_marginTop="90dp"
+    android:text="确定" />
+
+<Button
+    android:id="@+id/button3"
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    
+    android:layout_alignBaseline="@+id/button2"
+    android:layout_alignBottom="@+id/button2"
+    android:layout_alignLeft="@+id/button1"
+    android:layout_marginLeft="20dp"
+    android:text="返回" />
+
+<EditText
+    android:id="@+id/edittext2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/textview4"
+    android:layout_alignBottom="@+id/textview4"
+    android:layout_toRightOf="@+id/textview1"
+    android:background="#EAEAEA"
+    android:ems="10"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:width="200dp" />
+
+</RelativeLayout>
